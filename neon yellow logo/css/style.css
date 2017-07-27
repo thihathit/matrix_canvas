@@ -1,0 +1,56 @@
+body ,
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: relative;
+	z-index: 10;
+	background-color: #000;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.cell {
+	display: table-cell;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+img {
+	opacity: 0;
+	max-width: 500px; /* change this for the width of logo in percent of screen width */
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+
+	transition: 10s all;
+}
+img.active {
+	opacity: 0.6; /* change this between 0 and 1 for transparency of logo */
+}
+
+canvas {
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 10;
+	width: 100% !important;
+	height: 100% !important;
+	opacity: 0;
+
+	transition: 10s all;
+}
+canvas.active {
+	opacity: 1;
+}
